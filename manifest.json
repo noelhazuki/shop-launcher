@@ -2,7 +2,7 @@
   "name": "お店ランチャー",
   "short_name": "お店",
   "description": "お店アプリをまとめて起動できるランチャー",
-  "start_url": "./shop-launcher.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",

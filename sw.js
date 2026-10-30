@@ -3,7 +3,7 @@
 const CACHE_VERSION = 'shop-launcher-v1';
 const FILES = [
   './',
-  './shop-launcher.html',
+  './index.html',
   './manifest.json',
   './icon-192.png',
   './icon-512.png'
@@ -39,6 +39,6 @@ self.addEventListener('fetch', event => {
         caches.open(CACHE_VERSION).then(c => c.put(req, copy)).catch(() => {});
         return res;
       })
-      .catch(() => caches.match(req).then(hit => hit || caches.match('./shop-launcher.html')))
+      .catch(() => caches.match(req).then(hit => hit || caches.match('./index.html')))
   );
 });
